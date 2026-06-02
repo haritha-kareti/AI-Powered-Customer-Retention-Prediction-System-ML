@@ -1,70 +1,76 @@
 <div align="center">
 
-# 🤖 AI-Powered Customer Retention Prediction System
+<h1>🤖 AI-Powered Customer Retention Prediction System</h1>
 
-### Machine Learning-Based Customer Churn Prediction
+<p>
+A Machine Learning-based Customer Churn Prediction System that helps businesses identify customers who are likely to leave their services.
+</p>
 
 <img src="https://img.shields.io/badge/Python-3.10-blue?style=for-the-badge&logo=python">
-<img src="https://img.shields.io/badge/Flask-Web_App-green?style=for-the-badge&logo=flask">
-<img src="https://img.shields.io/badge/Machine_Learning-Scikit_Learn-orange?style=for-the-badge">
+<img src="https://img.shields.io/badge/Machine%20Learning-ScikitLearn-orange?style=for-the-badge">
 <img src="https://img.shields.io/badge/Status-Completed-success?style=for-the-badge">
 
 </div>
 
----
+<hr>
 
-## 📌 Project Overview
+<h2>📌 Project Overview</h2>
 
-This project is an **AI-Powered Customer Retention Prediction System** designed to identify customers who are likely to churn. The system uses Machine Learning techniques and a complete data preprocessing pipeline to analyze customer behavior and generate accurate churn predictions.
+<p>
+Customer retention is one of the most important challenges for subscription-based businesses.
+This project analyzes customer demographics, account information, and service usage patterns
+to predict customer churn.
+</p>
 
-### 🎯 Objectives
+<h3>Workflow Includes</h3>
 
-✔ Predict customer churn
+<ul>
+<li>Missing Value Imputation</li>
+<li>Outlier Treatment</li>
+<li>Feature Selection</li>
+<li>Categorical Encoding</li>
+<li>SMOTE Data Balancing</li>
+<li>Feature Scaling</li>
+<li>Model Development & Evaluation</li>
+</ul>
 
-✔ Improve customer retention strategies
+<hr>
 
-✔ Automate data preprocessing
+<h2>🚀 Features</h2>
 
-✔ Handle missing values and outliers
+<h3>Data Preprocessing</h3>
 
-✔ Balance imbalanced datasets using SMOTE
+<ul>
+<li>Missing Value Handling using MICE Imputation</li>
+<li>Data Cleaning</li>
+<li>Feature Transformation</li>
+</ul>
 
-✔ Build robust machine learning models
+<h3>Feature Engineering</h3>
 
----
+<ul>
+<li>Outlier Detection & Treatment</li>
+<li>Filter-Based Feature Selection</li>
+<li>Categorical Variable Encoding</li>
+</ul>
 
-## 🚀 Key Features
+<h3>Data Balancing</h3>
 
-<table>
-<tr>
-<td>✅ Missing Value Imputation</td>
-<td>✅ Outlier Treatment</td>
-</tr>
+<ul>
+<li>SMOTE Oversampling</li>
+</ul>
 
-<tr>
-<td>✅ Feature Selection</td>
-<td>✅ Categorical Encoding</td>
-</tr>
+<h3>Model Development</h3>
 
-<tr>
-<td>✅ SMOTE Oversampling</td>
-<td>✅ Feature Scaling</td>
-</tr>
+<ul>
+<li>Automated ML Pipeline</li>
+<li>Train-Test Split</li>
+<li>Model Evaluation</li>
+</ul>
 
-<tr>
-<td>✅ Model Training</td>
-<td>✅ Churn Prediction</td>
-</tr>
+<hr>
 
-<tr>
-<td>✅ Logging System</td>
-<td>✅ Automated ML Pipeline</td>
-</tr>
-</table>
-
----
-
-## 🛠️ Technology Stack
+<h2>🛠️ Technology Stack</h2>
 
 <table>
 <tr>
@@ -78,7 +84,7 @@ This project is an **AI-Powered Customer Retention Prediction System** designed 
 </tr>
 
 <tr>
-<td>Data Analysis</td>
+<td>Data Processing</td>
 <td>Pandas, NumPy</td>
 </tr>
 
@@ -93,321 +99,187 @@ This project is an **AI-Powered Customer Retention Prediction System** designed 
 </tr>
 
 <tr>
-<td>Imbalanced Data Handling</td>
+<td>Data Balancing</td>
 <td>SMOTE</td>
 </tr>
 
 <tr>
 <td>Logging</td>
-<td>Python Logging Module</td>
+<td>Python Logging</td>
 </tr>
+
+<tr>
+<td>Dataset</td>
+<td>Telco Customer Churn Dataset</td>
+</tr>
+
 </table>
 
----
+<hr>
 
-## 📂 Project Structure
+<h2>⚙️ Machine Learning Pipeline</h2>
 
-```text
-AI-Powered-Customer-Retention-Prediction-System/
-│
-├── main.py
-├── logging_code.py
-│
-├── MICE_Imputation.py
-├── variable_outliers.py
-├── filter_methods.py
-├── categorical_to_num.py
-├── feature_scaling.py
-│
-├── Telco-Customer-Churn.csv
-│
-├── logs/
-│
-└── README.md
-````
+<ol>
+<li>Data Loading</li>
+<li>Train-Test Split</li>
+<li>Missing Value Handling (MICE)</li>
+<li>Data Separation</li>
+<li>Outlier Treatment</li>
+<li>Feature Selection</li>
+<li>Categorical Encoding</li>
+<li>SMOTE Oversampling</li>
+<li>Feature Scaling</li>
+<li>Model Training & Evaluation</li>
+</ol>
 
----
+<hr>
 
-## ⚙️ Machine Learning Workflow
+<h2>📊 Dataset Information</h2>
 
-### 1️⃣ Data Loading
+<p><b>Dataset:</b> Telco Customer Churn Dataset</p>
 
-```python
-pd.read_csv('Telco-Customer-Churn.csv')
-```
+<p><b>Target Variable:</b> Churn</p>
 
-Loads customer data into a Pandas DataFrame.
+<table>
+<tr>
+<th>Value</th>
+<th>Meaning</th>
+</tr>
 
----
+<tr>
+<td>Yes</td>
+<td>Customer Leaves</td>
+</tr>
 
-### 2️⃣ Train-Test Split
+<tr>
+<td>No</td>
+<td>Customer Stays</td>
+</tr>
 
-```python
-train_test_split(
-    X,
-    y,
-    test_size=0.2,
-    random_state=42
-)
-```
+</table>
 
-* 80% Training Data
-* 20% Testing Data
+<hr>
 
----
+<h2>▶️ Installation</h2>
 
-### 3️⃣ Missing Value Handling
+<h3>Clone Repository</h3>
 
-Module:
-
-```python
-handle_missing_value()
-```
-
-Technique:
-
-* MICE Imputation
-* Numerical Data Cleaning
-* Missing Value Replacement
-
----
-
-### 4️⃣ Data Separation
-
-Numerical Features:
-
-```python
-select_dtypes(exclude='object')
-```
-
-Categorical Features:
-
-```python
-select_dtypes(include='object')
-```
-
----
-
-### 5️⃣ Outlier Treatment
-
-Module:
-
-```python
-vt_outliers()
-```
-
-Purpose:
-
-* Reduce skewness
-* Improve model performance
-* Stabilize feature distributions
-
----
-
-### 6️⃣ Feature Selection
-
-Module:
-
-```python
-fm()
-```
-
-Benefits:
-
-* Removes irrelevant features
-* Improves accuracy
-* Faster training
-
----
-
-### 7️⃣ Categorical Encoding
-
-Module:
-
-```python
-c_t_n()
-```
-
-Converts categorical values into machine-readable numerical values.
-
----
-
-### 8️⃣ Data Balancing
-
-```python
-SMOTE(random_state=42)
-```
-
-Balances minority and majority classes.
-
-Benefits:
-
-* Prevents model bias
-* Improves churn prediction accuracy
-
----
-
-### 9️⃣ Feature Scaling
-
-Module:
-
-```python
-fs()
-```
-
-Standardizes numerical features before model training.
-
----
-
-## 📊 Pipeline Architecture
-
-```text
-Dataset
-   │
-   ▼
-Missing Value Handling
-   │
-   ▼
-Data Separation
-   │
-   ▼
-Outlier Treatment
-   │
-   ▼
-Feature Selection
-   │
-   ▼
-Categorical Encoding
-   │
-   ▼
-SMOTE Balancing
-   │
-   ▼
-Feature Scaling
-   │
-   ▼
-Model Training
-   │
-   ▼
-Customer Churn Prediction
-```
-
----
-
-## 📈 Dataset Information
-
-### Dataset
-
-**Telco Customer Churn Dataset**
-
-### Target Variable
-
-```text
-Churn
-```
-
-Classes:
-
-```text
-Yes → Customer Leaves
-
-No → Customer Stays
-```
-
----
-
-## ▶️ Installation
-
-### Clone Repository
-
-```bash
+<pre>
 git clone https://github.com/haritha-kareti/AI-Powered-Customer-Retention-Prediction-System-ML.git
-```
+</pre>
 
-### Move Into Project
+<h3>Move into Project Directory</h3>
 
-```bash
+<pre>
 cd AI-Powered-Customer-Retention-Prediction-System-ML
-```
+</pre>
 
-### Create Virtual Environment
+<h3>Create Virtual Environment</h3>
 
-```bash
+<pre>
 python -m venv venv
-```
+</pre>
 
-### Activate Environment
+<h3>Activate Environment</h3>
 
-Windows
+<b>Windows</b>
 
-```bash
+<pre>
 venv\Scripts\activate
-```
+</pre>
 
-Linux/Mac
+<b>Linux / Mac</b>
 
-```bash
+<pre>
 source venv/bin/activate
-```
+</pre>
 
-### Install Requirements
+<h3>Install Dependencies</h3>
 
-```bash
+<pre>
 pip install -r requirements.txt
-```
+</pre>
 
----
+<hr>
 
-## ▶️ Run Project
+<h2>▶️ Run the Project</h2>
 
-```bash
+<pre>
 python main.py
-```
+</pre>
 
----
+<hr>
 
-## 📷 Screenshots
+<h2>📈 Pipeline Flow</h2>
 
-<div align="center">
+<pre>
+Load Dataset
+      │
+      ▼
+Train-Test Split
+      │
+      ▼
+Missing Value Handling
+      │
+      ▼
+Data Separation
+      │
+      ▼
+Outlier Treatment
+      │
+      ▼
+Feature Selection
+      │
+      ▼
+Categorical Encoding
+      │
+      ▼
+SMOTE Balancing
+      │
+      ▼
+Feature Scaling
+      │
+      ▼
+Model Training
+      │
+      ▼
+Prediction
+</pre>
 
-### Home Page
+<hr>
 
-<img src="images/home.png" width="800">
+<h2>🎯 Business Benefits</h2>
 
-### Prediction Result
+<ul>
+<li>Reduce Customer Churn</li>
+<li>Improve Customer Retention</li>
+<li>Increase Customer Lifetime Value</li>
+<li>Optimize Marketing Campaigns</li>
+<li>Better Customer Experience</li>
+</ul>
 
-<img src="images/result.png" width="800">
+<hr>
 
-</div>
+<h2>🔮 Future Enhancements</h2>
 
----
+<ul>
+<li>Flask Web Application</li>
+<li>Real-Time Prediction API</li>
+<li>AWS Deployment</li>
+<li>Explainable AI (SHAP)</li>
+<li>Interactive Dashboard</li>
+<li>Automated Retraining Pipeline</li>
+</ul>
 
-## 🎯 Business Benefits
+<hr>
 
-* Reduce Customer Churn
-* Improve Customer Retention
-* Increase Revenue
-* Improve Customer Satisfaction
-* Enable Data-Driven Decisions
+<h2>👨‍💻 Author</h2>
 
----
+<h3>Haritha Kareti</h3>
 
-## 🔮 Future Enhancements
-
-* Flask Web Application
-* Real-Time Prediction API
-* AWS Deployment
-* Explainable AI (SHAP)
-* Dashboard Analytics
-* Automated Retraining
-
----
-
-## 👨‍💻 Author
-
-### Haritha Kareti
-
-Machine Learning Engineer
+<p>
+AI & Machine Learning Developer
+</p>
 
 <p>
 <a href="https://github.com/haritha-kareti">
@@ -415,13 +287,13 @@ GitHub Profile
 </a>
 </p>
 
----
+<hr>
 
 <div align="center">
 
-### ⭐ Star this repository if you found it useful!
+<h3>⭐ If you find this project useful, please give it a star!</h3>
 
-Made with ❤️ using Python & Machine Learning
+<p>Made with ❤️ using Python & Machine Learning</p>
 
 </div>
 ```
