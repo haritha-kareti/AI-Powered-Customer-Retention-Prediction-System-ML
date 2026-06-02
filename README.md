@@ -1,4 +1,3 @@
-````html
 <div align="center">
 
 # 🤖 AI-Powered Customer Retention Prediction System
