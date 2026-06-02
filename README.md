@@ -1,4 +1,3 @@
-```html
 <h1 align="center">🤖 AI-Powered Customer Retention Prediction System</h1>
 
 <p align="center">
